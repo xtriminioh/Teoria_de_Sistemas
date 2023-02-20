@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage[total={18cm,22cm},top=3cm,left=2cm,right=2cm]{geometry}
+\parindent=0mm
+\usepackage[utf8]{inputenc}
+
+\usepackage{multicol}
+
+\usepackage{hyperref}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usepackage{enumitem}
+\definecolor{azulF}{rgb}{.0,.0,.3}
+\newcommand{\cnumero}[2]{\tikz[baseline=(myanchor.base)]
+\node[minimum size=0.2cm,circle,
+inner sep=1pt,draw, #2, thick, fill=#2](myanchor)
+{\color{white}\bfseries\fontsize{8}{8}#1};}
+
+\newcommand*{\itembolasazules}[1]{\protect\cnumero{#1}{azulF}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%TODO
+\fancyhead[L]{TEORÍA DE SISTEMAS}
+%TODO
+\fancyhead[R]{UNAH-VS}
+\fancyfoot[C]{\thepage}
+
+\renewcommand*\contentsname{Contenido}
+
+\begin{document}
+%*******************************************************
+% Portada
+%*******************************************************
+\begin{titlepage}
+
+  \begin{center}
+    {\includegraphics[width=0.65\linewidth]{/home/xtriminio/.config/nvim/template/Imgs/unahWallpaper.png}\par}
+
+    
+  
+    {\bfseries\Huge Universidad Nacional Autónoma de\\
+                     Honduras en el valle de Sula \par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\huge TEORÍA DE SISTEMAS\par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\Large CONCEPTOS DE MODELADO DE CASOS DE USO}
+  
+    \vfill 
+    {\large Catedrático:\par} %TODO
+    {\large Ing. Tania Melissa Pineda Godoy \par} %TODO
+  
+    \vfill
+    {\large Alumno: \par}
+    {\large Jimmy Xavier Triminio Hernández - 20122008197 \par}
+
+    \vfill
+    {\large Febrero 2023\par} %TODO
+
+  \end{center}
+
+\end{titlepage}
+
+%*******************************************************
+% Contenido 
+%*******************************************************
+\newpage
+\tableofcontents
+
+%*******************************************************
+% Introducción
+%*******************************************************
+\vspace{1cm}
+\section{ Introducción }
+
+Los conceptos principales del modelado de casos de uso
+son una herramientas esenciales para desarrollar sistemas 
+informáticos y procesos empresariales. Estos conceptos 
+incluyen casos de uso, actores, puntos de extensión, 
+flujo de eventos, diagramas de casos de uso, relaciones
+de casos de uso y excepciones. Los casos de uso describen
+los pasos necesarios para alcanzar objetivos 
+específicos en un sistema, mientras que los actores
+son usuarios o entidades externas que interactúan con
+el sistema a través de los casos de uso. Los puntos de 
+extensión marcan los puntos donde la funcionalidades
+del sistema pueden ampliarse, mientras que los flujos 
+de eventos describen los pasos necesarios para 
+completar un caso de uso. Los diagramas de casos de uso
+proporcionan una vista gráfica de los casos de uso, los 
+actores y las relaciones entre ellos, mientras que las
+relaciones de casos de uso describen la forma en que 
+los casos de uso están relacionados entre sí. Finalmente, las excepciones se refieren a situaciones
+inesperadas que pueden surgir durante el proceso de un
+caso de uso.
+
+%*******************************************************
+% Contenido 
+%*******************************************************
+\vspace{1cm}
+\section{Conceptos Principales de Modelado de Casos de Uso}
+
+Los conceptos principales de modelado de casos de uso
+incluyen casos de uso, actores, puntos de extensión,
+flujos de eventos, diagramas de casos de uso, 
+relaciones de casos de uso y excepciones.
+
+Los casos de uso son los pasos necesarios para lograr un
+objetivo específico en un sistema. Estos casos pueden
+incluir acciones como realizar una compra, iniciar una
+sesión o enviar un mensaje. Los actores son los 
+usuarios o entidades externas al sistema, como un cliente
+o un proveedor, que interactúan con el sistema a través 
+de los casos de uso. Los puntos de extensión marcan los 
+puntos donde pueden ampliarse la funcionalidad del 
+sistema. Los flujos de eventos describen los pasos 
+necesarios para completar un caso de uso.
+
+Los diagramas de casos de uso proporcionan un vista 
+gráfica de los casos de uso, los actores y las
+relaciones entre ellos. Las relaciones de casos de uso
+describen la forma en que los casos de uso están
+relacionados entre sí. Las excepciones se refieren a 
+situaciones que pueden producirse durante el proceso
+de uso, como un error o una condición de frontera.\\
+
+\textbf{Caso de Uso}:
+\begin{itemize}
+  \item  Es un \textit{artefacto} que define una secuencia de acciones que dan lugar a un resultado de valor observable.
+  \item Los casos de uso \textit{proporcionan} una estructura una estructura para expresar requisitos funcionales en el contexto de procesos empresariales y de sistema.
+\end{itemize}
+
+%*******************************************************
+% Biografia 
+%*******************************************************
+\section{ Biografía }
+\vspace{1cm}
+
+\begin{enumerate}
+  \item \textbf{Diagrama de Casos de uso}\\
+    \href{https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/diagrama-de-casos-de-uso/}{www.ionos.es}
+
+  \item \textbf{Definición de casos de uso}\\
+    \href{https://www.ibm.com/docs/es/elm/6.0.3?topic=requirements-defining-use-cases}{www.ibm.com}
+\end{enumerate}
+
+
+\end{document}
+

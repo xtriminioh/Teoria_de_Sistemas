@@ -1,0 +1,241 @@
+\documentclass[12pt]{article}
+\usepackage[total={18cm,22cm},top=3cm,left=2cm,right=2cm]{geometry}
+\parindent=0mm
+\usepackage[utf8]{inputenc}
+
+\usepackage{booktabs}
+
+\usepackage[table]{xcolor}
+
+\usepackage{multicol}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usepackage{enumitem}
+\definecolor{azulF}{rgb}{.0,.0,.3}
+\newcommand{\cnumero}[2]{\tikz[baseline=(myanchor.base)]
+\node[minimum size=0.2cm,circle,
+inner sep=1pt,draw, #2, thick, fill=#2](myanchor)
+{\color{white}\bfseries\fontsize{8}{8}#1};}
+
+\newcommand*{\itembolasazules}[1]{\protect\cnumero{#1}{azulF}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%TODO
+\fancyhead[L]{Teoría de Sistemas - Grupo Fénix}
+%TODO
+\fancyhead[R]{UNAH-VS}
+\fancyfoot[C]{\thepage}
+
+\renewcommand*\contentsname{Contenido}
+
+\begin{document}
+%*******************************************************
+% Portada
+%*******************************************************
+\begin{titlepage}
+
+  \begin{center}
+    {\includegraphics[width=0.65\linewidth]{$HOME/Dev/dotfiles/VimTempls/Imgs/unahvs-logo.png}\par}
+  
+    {\bfseries\Huge Universidad Nacional Autónoma de\\
+                     Honduras en el valle de Sula \par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\huge TEORÍA DE SISTEMAS\par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\Large Identificación de Problemas,\\
+              Síntomas, Soluciones Propuestas }
+  
+    \vfill 
+    {\large Catedrático:\par} %TODO
+    {\large Lic. Tania Pineda\par} %TODO
+  
+    \vfill
+
+      \textbf{\textit{ Grupo Fénix }}
+    
+      \begin{tabular}{lr} \toprule
+          Nombre Completo & No. Cuenta\\ \midrule
+          Areli Yaniris Flores Soto & 20172030394 \\
+          Paola Maria Pérez Reyes & 20152030878 \\
+          Samuel Alejandro Suazo Méndez & 20182000862 \\
+          Jimmy Xavier Triminio Hernández & 20122008197 \\
+          Luis David Romero Enamorado & 20182001663 \\ \bottomrule
+      \end{tabular} 
+
+    \vfill
+    {\large OCTUBRE 2021 | UNIDAD \#2 \par} %TODO
+
+  \end{center}
+
+\end{titlepage}
+
+%*******************************************************
+% Contenido 
+%*******************************************************
+\newpage
+\tableofcontents
+
+%*******************************************************
+% Introducción
+%*******************************************************
+\newpage
+\section{ Introducción }
+\vspace{1cm}
+
+\begin{center}
+\begin{minipage}{12cm}
+
+  El analista tiene a ser es observador que solo pervive los diferentes 
+  problemas a las que se enfrentas las empresas y como estas tiene que ver
+  como dar solución a estos. y que son claros interruptores en off que 
+  hacer muchas de las área que depende la información clara, transparente
+  y a tiempo, para que estos puede tomar acción en tiempo y forma.
+
+\end{minipage}
+\end{center}
+
+%*******************************************************
+% Objetivos 
+%*******************************************************
+\newpage
+\section{ Objetivos }
+\vspace{1cm}
+
+\begin{itemize}
+  \item Realizar el análisis de como una empresas puede llegar a agilizar
+    las diferentes formas de gestionar su información.
+  \item Veremos que la utilización de las bases de datos son muy importante.
+  \item Ver los puntos mas débiles que todas las empresas llegar ha tener 
+    entre sus filas. Como es la comunicación entre las diferentes áreas.
+\end{itemize}
+
+% Tema del documento 
+%*******************************************************
+\newpage
+
+\begin{center}
+\section{ 
+Identificación de Problemas, Síntomas,
+Soluciones Propuestas
+}
+
+\vspace{1cm}
+
+\end{center}
+
+\subsubsection{ Planteamiento del caso de Estudio }
+
+\vspace{.25cm}
+\begin{center}
+\begin{minipage}{14cm}
+
+  Con miras de realizar el desarrollo analítico de las 
+  posibles \textit{ resoluciones } al caso de estudio de Concrex,
+  (\textit{Concretos Éxito}), en que la empresas como tal carece de un 
+  sistemas de control para gestionar la exigencias de la materias primas 
+  para la variedad de productos del cual cuenta en su catalogo de productos 
+  y servicios, y de esta manera optimizar sus procesos internos, 
+  el \textit{ análisis } de las compras realizadas, y todas las actividades 
+  de desarrollan al rededor de las ventas de bienes y servicios.\\
+
+  En el \textit{ análisis } nos muestra la \textit{problemática} en un
+  contexto de distribución, inventario y \textit{ comunicación } entre los
+  diferentes departamentos que esta involucrados al momento de realizar 
+  las actividades, de donde podemos notar el poco desarrollo de 
+  procesos sistematizados que pueden minimizar dichos procesos como ser:
+
+  \begin{itemize}
+    \item La \textit{ comunicación }.\\
+      En la \textit{comunicación} entre la oficina principal y sus empleados,
+      la oficina principal y los \textit{Jefes Área} y los despachadores
+      finales, los que afecta directamente a la movilización de los pedidos.
+    \item Sistema de gestión de inventarios. \\
+      No se cuenta con un sistema de gestión o manejo de inventarios stock,
+      (misceláneos, materias primas, producto final) y que este permita a
+      demás una mejor distribución entre los items de productos que tengan 
+      mayor y menor demanda, y saber los minios y máximos de los mismos.
+
+  \end{itemize}
+  
+
+\end{minipage}
+\end{center}
+
+\vspace{0.5cm}
+
+\subsubsection{ Sintomas del Problema }
+\begin{center}
+\begin{minipage}{14cm}
+
+  En primer lugar, nos centraremos el ver el largo procesos que se lleva a
+  cabo y de como fluye la información entre los diferentes departamentos.
+  Ya que al momento de realizar la tramitación ya sea de una compra de 
+  materia prima o servicios, puede llegar varias horas, para llegar ser
+  procesado y efectuado, entre 2 a 3 días, en tanto cotizaciones, firmas 
+  autorizadas, realizar la compra, tiende a llegar mucho tiempo y si hablamos
+  de salas de ventas o proyectos que están algo retirados, el tiempo que
+  se puede tomar llegaríamos a hablar de semanas.\\
+
+  Por otra parte, vemos la dificulta de llegar el seguimientos del inventario
+  y de todos lo que aplica para ello, y recordando que cuando hablamos de 
+  productos que puede llegar a presentar deterioro, es importante tener en
+  cuentas que \textit{"primeras entradas son las primeras salidas"}, y tener
+  al día las fechas de caducidad de aquellos productos que puedan presentar
+  esta característica perecedera, y entres otros el proceso sea más incomodo,
+  tedioso y extenso.
+
+\end{minipage}
+\end{center}
+
+\vspace{0.5cm}
+
+\subsubsection{ Identificación de Problemas}
+\begin{center}
+\begin{minipage}{14cm}
+  \begin{itemize}
+    \item No se cuenta con un sistema de gestión para inventarios.
+    \item No se planifica correctamente la distribución de las compras.
+    \item No existen una buena comunicación entre los empleados.
+    \item No hay comunicación entre las diferentes áreas del ciclo de ventas
+      y producción. 
+  \end{itemize}
+
+\end{minipage}
+\end{center}
+
+\vspace{0.5cm}
+
+\subsubsection{ Soluciones Propuestas}
+\begin{center}
+\begin{minipage}{14cm}
+  \begin{itemize}
+    \item Crear un sistema de información donde se pueda controlar el
+      inventario, las compras y los diferentes pedidos.
+    \item Establecer alineamientos o políticas que sean flexibles
+      pero que a su vez no den libre modificación una vez realizados los
+      pedidos y una gestión de reclamos o devoluciones.
+    \item Establecer un periodo de registro histórico
+      \textit{(base de datos)} que permita el seguimiento del analítico de
+      las ventas y estados financieros de clientes, proveedor y acreedores.
+  \end{itemize}
+
+\end{minipage}
+\end{center}
+\vspace{2cm}
+
+
+\end{document}
+end{document}
+

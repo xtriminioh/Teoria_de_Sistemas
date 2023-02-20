@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1} Introducción }{2}%
+\contentsline {section}{\numberline {2} Objetivos }{3}%
+\contentsline {section}{\numberline {3} Identificación de Problemas, Síntomas, Soluciones Propuestas }{4}%
+\contentsline {subsubsection}{\numberline {3.0.1} Planteamiento del caso de Estudio }{4}%
+\contentsline {subsubsection}{\numberline {3.0.2} Sintomas del Problema }{5}%
+\contentsline {subsubsection}{\numberline {3.0.3} Identificación de Problemas}{5}%
+\contentsline {subsubsection}{\numberline {3.0.4} Soluciones Propuestas}{5}%

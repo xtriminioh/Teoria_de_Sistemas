@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\usepackage[total={18cm,22cm},top=3cm,left=2cm,right=2cm]{geometry}
+\parindent=0mm
+\usepackage[utf8]{inputenc}
+
+\usepackage{multicol}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{tikz}
+\usepackage{enumitem}
+\definecolor{azulF}{rgb}{.0,.0,.3}
+\newcommand{\cnumero}[2]{\tikz[baseline=(myanchor.base)]
+\node[minimum size=0.2cm,circle,
+inner sep=1pt,draw, #2, thick, fill=#2](myanchor)
+{\color{white}\bfseries\fontsize{8}{8}#1};}
+
+\newcommand*{\itembolasazules}[1]{\protect\cnumero{#1}{azulF}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%TODO
+\fancyhead[L]{TEORÍA DE SISTEMAS}
+%TODO
+\fancyhead[R]{UNAH-VS}
+\fancyfoot[C]{\thepage}
+
+\renewcommand*\contentsname{Contenido}
+
+\begin{document}
+%*******************************************************
+% Portada
+%*******************************************************
+\begin{titlepage}
+
+  \begin{center}
+    {\includegraphics[width=0.65\linewidth]{/home/xtriminio/.config/nvim/template/Imgs/unahWallpaper.png}\par}
+
+    
+  
+    {\bfseries\Huge Universidad Nacional Autónoma de\\
+                     Honduras en el valle de Sula \par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\huge TEORÍA DE SISTEMAS\par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\Large COMPUTACIÓN EN LA NUBE.}
+  
+    \vfill 
+    {\large Catedrático:\par} %TODO
+    {\large Ing. Tania Melissa Pineda Godoy \par} %TODO
+  
+    \vfill
+    {\large Alumno: \par}
+    {\large Jimmy Xavier Triminio Hernández - 20122008197 \par}
+
+    \vfill
+    {\large Febrero 2023\par} %TODO
+
+  \end{center}
+
+\end{titlepage}
+
+%*******************************************************
+% Contenido 
+%*******************************************************
+\newpage
+\tableofcontents
+
+%*******************************************************
+% Introducción
+%*******************************************************
+%\newpage
+\vspace{1cm}
+\section{ Introducción }
+
+  La computación en la nube es un concepto que incorpora
+  el software como servicio, como en la web 2.0 y otros
+  conceptos recientes, también conocidos como servicios
+  en la nube. Estos significa que los usuarios pueden
+  utilizar recursos como computación, almacenamiento y 
+  aplicaciones a través de internet, sin la necesidad 
+  de instalar y administrar software en sus propios 
+  sistemas. La computación en la nube ofrece servicios
+  como almacenamiento de datos, seguridad, redes,
+  aplicaciones de software, y business intelligence a
+  través de la internet. También puede permitir a los 
+  usuarios el acceso a recursos informáticos a nivel
+  mundial sin la necesidad de invertir en un sistema
+  local. Esto permite a los usuarios crear, implementar
+  y ejecutar aplicaciones de forma rápida, segura y 
+  escalable.
+
+%*******************************************************
+% Contenido
+%*******************************************************
+\vspace{1cm}
+\section{ La Computación en la Nube}
+  Los inicios de la \textit{computación en la nube} se 
+  remontan a finales de los años 90, cuando se empezó a
+  hablar sobre el concepto de una "red de computadoras
+  universales". El concepto básico del \textbf{cloud computing}
+  o computación en la nube fue acuñado en un seminario
+  impartido por Ramalingam Chellappa \footnote{\textbf{Ramalingam Chellappa}: es un profesor distinguido den Bloomberg, que trabaja en la Universidad Johns Hopkis. Es el científico en jefe del Instituto Johns Hopkis para la Autonomía Asegurada y se unió a la misma después de 29 años en la Universidad de Maryland.} 
+  en 1997 se le atribuye
+  el término a múltiples autores, entre ellos Carl Robnett Licklider \footnote{\textbf{Carl Robnett Licklider}: conocido simplemente como JCR o "Lick", fue un informático estadounidense que se considera estar entre las figuras más prominentes en el desarrollo de las ciencias de la computación y la historia general de la computación}, 
+  quien trabajó para el Departamento
+  de Defensa de los Estados Unidos en los años 60. En ese
+  momento, la idea era crear una red de computadoras que
+  pudieran compartir recursos entre sí, permitiendo a los
+  usuarios acceder a los mismos recursos desde grandes
+  plataformas de almacenamiento en la nube, como 
+  \href{https://aws.amazon.com/es/}{Amazon Web Services} y
+  \href{https://azure.microsoft.com/en-us/pricing/purchase-options/pay-as-you-go/}{Microsoft Azure},
+  y la computación en la nube se ha convertido en uno de los 
+  principales motores de economía digital.
+
+%*******************************************************
+% Biografia
+%*******************************************************
+\newpage
+\section{ Biografía }
+\vspace{1cm}
+
+\begin{enumerate}
+  \item \textbf{Introducción a la computación en la nube}\\
+    \href{https://courses.minnalearn.com/es/courses/digital-revolution/the-cloud-computing-revolution/introduction-to-cloud-computing/}{courses.minnalearn.com}
+
+  \item \textbf{Servicio de Amazon AWS}\\
+    \href{https://aws.amazon.com/es/}{aws.amazon.com}
+
+  \item \textbf{Microsoft Azure}\\
+    \href{https://azure.microsoft.com/en-us/pricing/purchase-options/pay-as-you-go/}{azure.microsoft.com}
+
+  \item \textbf{Google Sholar} - \textit{Ramalingam Chellappa}\\
+    \href{https://scholar.google.com/citations?user=L60tuywAAAAJ&hl=en}{sholar.google.com}
+
+  \item \textbf{JCR}\\
+    \href{https://en.wikipedia.org/wiki/J._C._R._Licklider}{en.wikipedia.org}
+
+\end{enumerate}
+
+
+\end{document}
+

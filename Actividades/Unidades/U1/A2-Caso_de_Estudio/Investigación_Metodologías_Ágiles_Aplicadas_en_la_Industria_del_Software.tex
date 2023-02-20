@@ -1,0 +1,294 @@
+\documentclass[12pt]{article}
+\usepackage[total={18cm,22cm},top=3cm,left=2cm,right=2cm]{geometry}
+\parindent=0mm
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyperref}
+
+\usepackage{multicol}
+
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+
+\usepackage{tikz}
+\usepackage{enumitem}
+\definecolor{azulF}{rgb}{.0,.0,.3}
+\newcommand{\cnumero}[2]{\tikz[baseline=(myanchor.base)]
+\node[minimum size=0.2cm,circle,
+inner sep=1pt,draw, #2, thick, fill=#2](myanchor)
+{\color{white}\bfseries\fontsize{8}{8}#1};}
+
+\newcommand*{\itembolasazules}[1]{\protect\cnumero{#1}{azulF}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+%TODO
+\fancyhead[L]{TEORÍA DE SISTEMAS}
+%TODO
+\fancyhead[R]{UNAH-VS}
+\fancyfoot[C]{\thepage}
+
+\renewcommand*\contentsname{Contenido}
+
+\begin{document}
+%*******************************************************
+% Portada
+%*******************************************************
+\begin{titlepage}
+
+  \begin{center}
+    {\includegraphics[width=0.65\linewidth]{$HOME/Imágenes/Imgs/unahvs-logo.png}\par}
+  
+    {\bfseries\Huge Universidad Nacional Autónoma de\\
+                     Honduras en el valle de Sula \par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\huge TEORÍA DE SISTEMAS\par}
+  
+    \vspace{1cm}
+  
+%TODO
+    {\scshape\Large 
+      Investigación Metodologías Ágiles Aplicadas en la Industria del Software.
+    }
+  
+    \vfill 
+    {\large Catedrático:\par} %TODO
+    {\large Ing. Tania Melissa Pineda Godoy\par} %TODO
+  
+    \vfill
+    {\large Alumno: \par}
+    {\large Jimmy Xavier Triminio Hernández - 20122008197 \par}
+
+    \vfill
+    {\large FEBRERO 2023\par} %TODO
+
+  \end{center}
+
+\end{titlepage}
+
+%*******************************************************
+% Contenido 
+%*******************************************************
+\newpage
+\tableofcontents
+
+%*******************************************************
+% Introducción
+%*******************************************************
+\newpage
+\section{ Introducción }
+
+\vspace{1cm}
+\begin{center}
+  \begin{minipage}{14cm}
+  La industria del software está cada vez más interesada en el uso de metodologías ágiles
+  para desarrollar software de calidad. Estas metodologías ofrecen una serie de
+  beneficios, como el incremento de la productividad, la reducción de costos, la mejora de la
+  calidad del producto y la rapidez con la que se llevan a cabo los proyectos. Esto ha
+  llevado a un aumento en la investigación sobre el uso de metodologías ágiles en la
+  industria del software. En este documento, se presenta una breve introducción a la 
+  investigación de metodologías ágiles aplicadas a la industria del software. Se discutirán
+  los conceptos básicos de la metodología ágil, los beneficios y desventajas de su uso, así
+  como los últimos avances en el tema. Se concluirá con una lista de recursos útiles para 
+  aquellos interesados en el tema.
+  \end{minipage}
+\end{center}
+
+
+\newpage
+
+\section{ Objetivos }
+
+\begin{enumerate}
+  \item Conocer las habilidades para trabajar de manera ágil en un entorno empresarial.
+  \item Comprender los principios básicos de la metodología ágil.
+  \item Conocer los valores de la metodología ágil.
+  \item Conocer el proceso de la metodología ágil.
+  \item Aprender cómo implementar técnicas y herramientas para aplicar la metodología en el trabajo.
+\end{enumerate}
+
+%\newpage
+\vspace{1cm}
+
+\section{Investigación Metodologías Ágiles Aplicadas en la Industria del Software.}
+
+\vspace{1cm}
+\subsection{ Metodología Ágil }
+
+Metodología Ágil es un conjunto de prácticas y técnicas para la gestión de proyectos que 
+ofrecen rapidez, eficiencia y flexibilidad. Su objetivo principal es aumentar la 
+calidad del producto final, ofreciendo resultados inmediatos y ahorrando tiempo y recursos. 
+Esta metodología se caracteriza por el uso de sprints cortos, donde los equipos trabajan en 
+pequeños incrementos de código para entregar resultados rápidamente. Además, se enfoca en 
+la colaboración, el auto-aprendizaje y la retroalimentación continua. Esto se logra a través 
+del uso de herramientas ágiles como el seguimiento de tareas, reuniones de standup y 
+retrospectivas. Esto permite a los equipos entregar productos de mayor calidad de manera 
+más rápida.\\
+
+Los métodos ágiles son una colección de metodologías innovadoras para el desarrollo 
+de sistemas las cuales se centran en los usuarios los cuales son en principio el 
+cliente o usuario final, de cada uno de los productos finales, obtenidos de aplicar estas metodologías para desarrollo de {\it software } especializados.\\ 
+
+\vspace{1cm}
+\subsection{ Principios básicos de la metodología ágil }
+Para poder explicar este método es imprescindible ceñirse a estos 12 principios fundamentales:
+
+\begin{enumerate}
+  \item Perseguir las \textit{satisfacción del cliente e informarle periódicamente} del estado del proyecto
+  \item Los nuevos \textit{cambios y requisitos son bienvenidos} y se valoran como modificaciones positivas
+  \item La división del trabajo se realiza en fases \textit{fases temporales productivas} divididas en semanas, quincenas, etc
+  \item Posibilidad de \textit{medir el progreso}
+  \item La forma de ejecutar los proyectos debe \textit{garantizar en sí misma la continuidad del proyecto} (desarrollo sostenible)
+  \item \textit{El equipo debe trabajar de forma coordinada y en conjunto}, utilizando el \textit{método Scrum} \footnote{\textbf{Método Scrum} es una técnica de metodología ágil ampliada que ofrece una forma de conectar varios equipos que necesitan trabajar juntos para ofrecer soluciones complejas.}, como una práctica efectiva y esencial para la correcto organización y desarrollo del trabajo.
+  \item \textit{Las conversaciones entre los integrantes del equipo y/o cliente deben llevarse a cabo en persona}, para comunicar de forma eficaz los mensajes.
+  \item Es necesario \textit{infundir motivación y confianza a los miembros} que forman parte del proyecto para obtener procesos exitosos.
+  \item \textit{Excelencia técnica y buen diseño}. En la metodología ágil, la calidad trabajo y la presentación forman parte del conjunto.
+  \item Se impone la \textit{ley de la simplicidad}. Las tareas deben ser lo más sencillas posibles. En caso de no poder simplificar se tendrá que dividir en iteraciones para reducir su nivel de complejidad.
+  \item \textit{Equipos auto-gestionados}. Aunque es necesario que existan una figura que monitorice los equipos de trabajo, ésto deben ser capaces de organizarse por sí mismos.
+  \item \textit{Adaptación a las circunstancias cambiantes}. Es imprescindible que los profesionales que ejecute los proyectos puedan adaptarse a las distintas circunstancias y modificaciones que puedan surgir durante el proceso.
+
+\end{enumerate}
+
+\vspace{1cm}
+\subsection{ Valores de la metodología ágil }
+
+El método ágil no solo se basa en el resultado final, sino que también en los
+valores, principios y prácticas. Los {\it valores} y {\it principios} establecidos
+son esenciales para la programación ágil; estos crean el contexto para la
+colaboración entre programadores y clientes. La metodología ágil es una metodología de desarrollo de \textit{software} que se basa en valores, principios y prácticas básicas. Los cuatro valores de la metodología ágil son: {comunicación}, \textit{simpleza}, \textit{retroalimentación} y \textit{valentía}.\\
+
+Como a menudo hay tensión entre los que hacen los desarrolladores a corto plazo
+y los que lo comercialmente deseable a largo plazo, es importante establecer los valores que formarán la base para actuar en conjunto en un proyecto de {\it software }. Estos valores son los siguientes:
+
+\begin{enumerate}
+  \item {\bf Comunicación }\\
+    En todo esfuerzo humano existe la posibilidad de una mala comunicación.
+    Los proyectos de sistemas que requieren de una constante actualización de una
+    constante actualización y diseño técnico son especialmente propensos a dichos 
+    errores. Si sumamos a ello tiempo de entrega ajustados, jerga especializada y 
+    el estereotipo de que los programadores prefieren hablar con las maquinas en vez
+    de las personas, terminamos con el potencial de toparnos con serios problemas
+    de comunicación.
+
+  \item {\bf Simpleza }\\
+    Cuando trabajamos en un proyecto de desarrollo de {\it software}, nuestra primera
+    tendencia es abrumarnos con la complejidad y tamaño de la tarea.
+    La {\it simpleza } para el desarrollo de {\it software} significa que debemos 
+    empezar con las cosas más simples que podamos realizar. Y el valor de la simpleza
+    nos pide hacer las cosas más sencillas hoy, a sabiendas de que tal vez mañana 
+    tengamos que cambiarla un poco.
+
+    ocurrir en cuestión de segundos, minutos, días, semanas o meses, esto
+    dependiendo de lo que se requiera, de quién se esté comunicando y de lo que se
+    pretende hacer con la retroalimentación.
+
+  \item {\bf Retroalimentación }\\
+    La retroalimentación es una forma de control de un sistema. Como sistemas, todas organizaciones usan la planeación y el control de para administrar sus recursos con efectividad.
+    La retroalimentación se recibe desde el interior de la organización y de los entornos
+    exteriores. Cualquier cosa externa a los límites de una organización se considera un entorno. Numerosos entornos con diversos grados de estabilidad constituyen el medio en el que existen las organizaciones.
+
+
+  \item {\bf Valentía }\\
+    El valor de la valentía tiene que ver con un nivel de {\it confianza} y
+    {\it confort} que debe existir en el equipo de desarrollo. Significa no tener
+    miedo de desperdiciar una tarde o un día de programación y empezar de nuevo si
+    no si todo está bien. Significa poder estar en contacto con los instintos de
+    uno mismo en relación con lo que funciona y lo que no.
+
+    Valentía también significa responder a la retroalimentación concreta, actuando
+    con base en las corazonadas de sus compañeros de equipo cuando ellos piensan 
+    que tienen una forma más simple y mejor de obtener su objetivo.
+\end{enumerate}
+
+\vspace{1cm}
+\subsubsection{ El Proceso de desarrollo ágil} 
+El modelado es una palabra clave en los métodos ágiles El modelado ágil aprovecha
+la oportunidad de crear modelos que pueden ser lógicos, como los dibujos de los
+sistemas, o maquetas de tamaño natural como los prototipos. Un proceso ordinario
+de modelado ágil podría ser el siguientes:\\
+
+\begin{enumerate}
+  \item Escuchar las historias de los usuarios por medio del cliente.
+  \item Dibujar un modelo de flujo de trabajo lógico para apreciar las
+    decisiones de negocios representadas en la historia de un usuario.
+  \item Crear historias de usuarios con base en el modelado lógico.
+  \item Desarrollar algunos prototipos de visualización. Para ello hay que mostrar
+    los clientes el tipo de interfaz que tendrán.
+  \item Usar la retroalimentación de los prototipos y los diagramas del flujo de 
+    de trabajo lógico para desarrollar el sistema hasta crear un modelo físico de 
+    datos.
+\end{enumerate}
+
+\vspace{1cm}
+\subsection{Comparativa entre SDLC y la metodología ágil}\\ 
+
+La metodología ágil es un enfoque moderno para el desarrollo de \textit{software} 
+\footnote{Tesis Doctoral, \textit{Metodología Ágil de Desarrollo de Software Enfocado a Trabajos de Grado en Ingeniería} - autor: Gustavo Armando Rivera Sanchez.}, mientras que el SDLC \footnote{ \textit{SDLC}:Ciclo de Vida del Desarrollo de Software} es un método tradicional. ambas se utilizan para desarrollo y mantener software de manera eficiente.\\
+
+La principal diferencia entre estas dos Metodologías es el enfoque. La metodología ágil se centra en la adaptación, la iteraciones y la mejora continua, mientras que el SDLC se basa en una planificación detallada, una estructura formal y un proceso escrito. Otro gran diferenciador es que la metodología ágil se basa en equipo auto-organizado, mientras que el SDLC se basa ne roles y responsabilidades claramente definidos.\\
+
+Otras diferencias entre SDLC y la metodología ágil incluyen el tiempo de desarrollo, el control de calidad, el grado de documentación y la estabilidad del producto. La metodología ágil suele tener un tiempo de desarrollo más corto, un control de calidad más alto y una documentación más ligera. Por otro lado, el SDLC suele tener un mayor estabilidad del producto, ya que el proceso es más estructurado y formal.\\
+
+Los investigadores ({\it Davis} y {\it Naumann}, 1999) desarrollaron un lista de (7)
+estrategias que pueden mejorar las eficiencia: 
+
+\begin{enumerate}
+  \item Reducir el tiempo de los errores de la interfaz.
+  \item Reducir el tiempo de aprendizaje del proceso y las pérdidas duales
+    de procesamiento.
+  \item Reducir el tiempo y esfuerzo requeridos para estructurar las tareas
+    y aplicar formatos a las salidas.
+  \item Reducir la expansión improductiva del trabajo.
+  \item Reducir el tiempo y costo del almacenamiento, la investigación de datos
+    y del conocimiento.
+  \item Reducir el tiempo y costos de la comunicación y la coordinación.
+  \item Reducir las perdidas debido a la sobrecarga humana de información.
+\end{enumerate}
+
+
+\subsubsection{Implementación mediante Metodologías ágiles}
+\begin{enumerate}
+  \item Adoptar la programación en pareja.
+  \item Creación de prototipos y  desarrollo rápido.
+  \item Fomentar las entregas pequeñas.
+  \item Limitar el alcance en cada entrega.
+  \item Permitir un cliente en el sitio.
+  \item Usar cajas de tiempo (timeboxing).
+  \item Apegarse a una semana de trabajo de 40 horas.
+\end{enumerate}
+
+\newpage
+\section{ Conclusiones }
+\vspace{1cm}
+\begin{center}
+  \begin{minipage}{14cm}
+    Hemos visto que tanto los métodos ágiles como la interacción con los programadores, clientes, analistas y humano-computadora son fundamentales para el éxito de un proyecto. Los analistas de sistemas pueden utilizar prototipos para recopilar reacciones de los usuarios, sugerencias, innovaciones y planes de revisión para realizar mejoras al prototipo y modificar los planes del sistema con un mínimo de costo y de interrupciones. Al desarrollar un prototipo, se deben tener en cuenta cuatro alineamientos principales: trabajar en módulos administrables, crear el prototipo con rapidez, modificar el prototipo y hacer énfasis en la interfaz de usuario. Estas prácticas pueden ayudar a garantizar un proceso de desarrollo eficaz y eficiente que resulte en un sistema de calidad.
+  \end{minipage}
+\end{center}
+
+\newpage
+\section{ Bibliografías }
+
+\begin{enumerate}
+  \item \textbf{ \textit{ Análisis y Diseño de Sistemas } }\\
+  (\textit {KENDALL \& KENDALL })\\
+  \textit{ octava edición }
+
+  \item \textbf{ \textit{Cognodata}} Principios de Metodología Ágil \\ 
+  \href{https://www.cognodata.com/principios-metodologia-agile-desarrollo-proyectos}{www.cognodata.com}
+
+  \item \textbf{\textit{Tesis Doctoral}}, \textit{Metodología Ágil de Desarrollo de Software Enfocado a Trabajos de Grado en Ingeniería} - autor: \textbf{Gustavo Armando Rivera Sanchez}.
+  \href{https://repository.unilibre.edu.co/bitstream/handle/10901/23827/Metodolog%C3%ADa%C3%81gilDeDesarrolloDeSoftwareEnfocadoATrabajosDeGradoEnIngenier%C3%ADa.pdf?sequence=2&isAllowed=y}{Tesis Doctoral 2021}
+
+\end{enumerate}
+
+\vspace{1cm}
+
+\end{document}
+\end{document}
+
